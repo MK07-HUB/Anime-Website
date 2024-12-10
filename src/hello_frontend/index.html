@@ -1,47 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceX Website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car World - High Resolution Car Website</title>
+
+    <!-- External Style Sheet Link (for example) -->
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Inline CSS for quick styling (External CSS is better for large projects) */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #222;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #444;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        .car-description {
+            width: 45%;
+        }
+
+        .car-description h2 {
+            font-size: 2em;
+        }
+
+        .car-description p {
+            line-height: 1.6;
+        }
+
+        .car-image {
+            width: 45%;
+            text-align: center;
+        }
+
+        .car-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design for High Resolutions */
+        @media screen and (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .car-description, .car-image {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            nav a {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#missions">Missions</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Car World</h1>
+        <p>Your one-stop destination for all things cars!</p>
     </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to SpaceX</h1>
-            <p>SpaceX is a private aerospace manufacturer and space transport services company founded in 2002 by Elon Musk.</p>
-            <button>Learn More</button>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#cars">Cars</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="main-content">
+        <section class="car-description">
+            <h2>Featured Car: Tesla Model S</h2>
+            <p>The Tesla Model S is a luxury electric vehicle that offers incredible performance, with a range of up to
+                370 miles and acceleration that can go from 0-60 mph in just 2.3 seconds. Designed for the future, the
+                Model S features cutting-edge technology, autonomous driving capabilities, and a minimalist interior.
+            </p>
+            <p>With a spacious cabin and top-tier safety features, the Model S is not just a car—it's a statement about
+                the future of sustainable driving.</p>
         </section>
-        <section id="about">
-            <h1>About SpaceX</h1>
-            <p>SpaceX is headquartered in Hawthorne, California, and has a research and development facility in McGregor, Texas.</p>
-            <button>Read More</button>
+
+        <section class="car-image">
+            <img src="https://www.tesla.com/sites/default/files/modelsx-new/social/model-s-hero-social.jpg" alt="Tesla Model S">
         </section>
-        <section id="missions">
-            <h1>Missions</h1>
-            <p>SpaceX has launched numerous satellites, spacecraft, and other payloads into orbit, and has also developed the Dragon spacecraft.</p>
-            <button>View Missions</button>
-        </section>
-        <section id="contact">
-            <h1>Get in Touch</h1>
-            <p>Contact us to learn more about SpaceX and our mission to revolutionize space technology.</p>
-            <button>Contact Us</button>
-        </section>
-    </main>
+    </div>
+
     <footer>
-        <p>&copy; 2023 SpaceX</p>
+        <p>&copy; 2024 Car World. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
 </body>
+
 </html>
