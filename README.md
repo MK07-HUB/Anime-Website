@@ -60,3 +60,4 @@ If you are hosting frontend code somewhere without using DFX, you may need to ma
 # Website-Project
 # Website-Project
 # Website-Project
+# Anime-Website
